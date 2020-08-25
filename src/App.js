@@ -38,16 +38,15 @@ function App() {
       });
     }
 
-    console.log("I have a token 👉", token);
+    
   }, []);
 
-  console.log("::", user)
 
   return (
     <div className="App">
       {/* <h1>Hello this is spotify 🚀   </h1> */}
 
-      {token ? <Player /> : <Login />}
+      {token ? <Player spotify={spotify} /> : <Login />}
     </div>
   );
 }
