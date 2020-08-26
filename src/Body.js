@@ -4,7 +4,7 @@ import "./Body.css";
 function Body() {
     return (
         <div className="body">
-            I am a body
+            <Header spotify={spotify}/>
         </div>
     )
 }
